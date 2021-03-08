@@ -1,0 +1,21 @@
+{
+    "name": "Dark Theme for UNSW Moodle",
+    "version": "1.0",
+    "description": "An extention that changes the theme of Moodle's webpage to dark",
+    "content_scripts": [
+        {
+            "matches":["https://moodle.telt.unsw.edu.au/*"],
+            "js":["content.js"]
+        }
+    ],
+    "browser_action":{
+        "default_popup": "button.html",
+        "default_title": "Dark Theme for UNSW Moodle"
+    },
+    "icons":{
+        "16": "button_image.png",
+        "48": "button_image.png",
+        "128": "button_image.png"
+    },
+    "manifest_version": 2
+}
